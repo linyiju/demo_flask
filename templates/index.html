@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>心裡好痛 功課好難</title>
+</head>
+<body>
+    <div class="index">
+    <h1 class="title1">爬出你的心聲?</h1>
+    <h4>現在日期: {{data["date"]}}</h4>
+    <h4>現在時間: {{data["time"]}}</h4>
+    <h2></h2>
+    </div>
+    <form action="/test2">
+        <div class="textarea">
+        <textarea rows="20" cols="100">{{data["report"]}}</textarea>
+        </div>
+        <div class="button">
+            <input id="get" type="submit" value="「心」聞"/>
+            <a id="download2" download href="{{ url_for('test3', filename='Fart.mp3') }}" target="_blank"><input
+                    type="button" value="有聲對話" /></a>
+        </div>
+    </form>
+    <form action="/">
+        <input id="index" type="submit" value="重心來過"/>
+    </form>
+
+</body>
+
+</html>
+
+
